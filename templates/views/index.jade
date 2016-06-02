@@ -1,0 +1,16 @@
+extends ../layouts/default
+
+block content
+  .container: .jumbotron
+    h1 Karaoke Demo
+    hr
+    video
+    hr
+    button(id="btnStopRecording") Stop
+    hr
+    p play back and save/delete
+    hr
+    
+block js
+    script(src="/js/karaoke/RecordRTC.js")
+    script(src='/js/karaoke/karaoke.js')
